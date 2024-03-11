@@ -5,3 +5,7 @@ https://github.com/felipesanches/mame/tree/technics_keyboards
     
 See also:
 https://github.com/mamedev/mame/pull/11835
+
+
+Usage:
+./technics kn5000 -rp ~/ROM_DUMPS/ -extension hdae5000 -artpath ~/KN5000_MAME_artwork/

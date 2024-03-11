@@ -10,7 +10,9 @@
 
 	<view name="External Layout">
 	<bounds left="0" right="1280" top="0" bottom="640" />
-	<overlay element="cpanel"><bounds x="0" y="0" width="1280" height="640" /></overlay>
+
+	<element ref="cpanel"><bounds x="0" y="0" width="1280" height="640" /></element>
+
 	<screen index="0"><bounds x="480" y="82" width="320" height="240" /></screen>
 	</view>
 </mamelayout>
