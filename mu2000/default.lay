@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+license:CC0-1.0
+authors:hap, Felipe Sanches
+-->
+<mamelayout version="2">
+
+<!-- define elements -->
+	<element name="cpanel"><image file="mu2000.png"/></element>
+
+	<element name="led" defstate="0">
+		<disk state="0"><color red="0.38" green="0.45" blue="0.39" /></disk>
+		<disk state="1"><color red="0.43" green="1.00" blue="0.29" /></disk>
+	</element>
+
+	<element name="ledred" defstate="0">
+		<disk state="0"><color red="0.45" green="0.38" blue="0.39" /></disk>
+		<disk state="1"><color red="1.00" green="0" blue="0.2" /></disk>
+	</element>
+
+	<element name="ledr" defstate="0">
+		<rect state="0"><color red="0.38" green="0.45" blue="0.39" /></rect>
+		<rect state="1"><color red="0.43" green="1.00" blue="0.29" /></rect>
+	</element>
+
+	<element name="round_white_button"></element>
+	<element name="rect_white_button"></element>
+	<element name="rect_yellow_button"></element>
+
+	<element name="lcda" defstate="0">
+		<rect>
+			<color state="0" red="0" green="0" blue="0" />
+			<color state="7" red="0.95" green="0.95" blue="0.95" />
+		</rect>
+	</element>
+
+	<element name="lcdm"><rect><color red="0.7" green="1.0" blue="0.2" /></rect></element>
+
+<!-- build screen -->
+
+	<view name="External Layout">
+		<bounds x="0" y="0" width="1640" height="680" />
+		<element ref="cpanel"><bounds left="0" right="1640" top="0" bottom="680"/></element>
+
+		<screen index="0"><bounds x="425" y="103" width="640" height="193" /></screen>
+		<element name="contrast" ref="lcda" blend="add"><bounds x="425" y="103" width="640" height="193" /></element>
+		<element ref="lcdm" blend="multiply"><bounds x="425" y="103" width="640" height="193" /></element>
+
+		<element name="LED6" ref="ledr"><!-- MU --><bounds x="800" y="585" width="31" height="20" /></element>
+		<element name="LED7" ref="ledr"><!-- PLG-1 --><bounds x="864" y="585" width="31" height="20" /></element>
+		<element name="LED8" ref="ledr"><!-- PLG-2 --><bounds x="928" y="585" width="31" height="20" /></element>
+		<element name="LED9" ref="ledr"><!-- PLG-3 --><bounds x="992" y="585" width="31" height="20" /></element>
+
+		<element name="LED0" ref="led" inputtag="SWS3" inputmask="0x80"><!-- PLAY --><bounds x="1186" y="113" width="34" height="34" /></element>
+		<element name="LED1" ref="led" inputtag="SWS3" inputmask="0x40"><!-- EDIT --><bounds x="1254" y="113" width="34" height="34" /></element>
+		<element name="LED2" ref="led" inputtag="SWS3" inputmask="0x20"><!-- UTIL --><bounds x="1186" y="185" width="34" height="34" /></element>
+		<element name="LED3" ref="led" inputtag="SWS3" inputmask="0x10"><!-- EFFECT --><bounds x="1254" y="185" width="34" height="34" /></element>
+		<element name="LED4" ref="ledred" inputtag="SWS5" inputmask="0x80"><!-- SAMPLING --><bounds x="1186" y="258" width="34" height="34" /></element>
+		<element name="LED5" ref="led" inputtag="SWS4" inputmask="0x80"><!-- SEQ --><bounds x="1254" y="258" width="34" height="34" /></element>
+
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x80"><!-- Piano --><bounds x="463" y="369" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x40"><!-- Chrom. perc. --><bounds x="559" y="369" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x20"><!-- Organ --><bounds x="655" y="369" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x10"><!-- Guitar --><bounds x="751" y="369" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x08"><!-- Bass --><bounds x="846" y="369" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS0" inputmask="0x04"><!-- Strings --><bounds x="942" y="369" width="84" height="29"/></element>
+
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x80"><!-- Ensemble --><bounds x="463" y="442" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x40"><!-- Brass --><bounds x="559" y="442" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x20"><!-- Reed --><bounds x="655" y="442" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x10"><!-- Pipe --><bounds x="751" y="442" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x08"><!-- Synth lead --><bounds x="846" y="442" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS1" inputmask="0x04"><!-- Synth pad --><bounds x="942" y="442" width="84" height="29"/></element>
+
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x80"><!-- Synth effects --><bounds x="463" y="514" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x40"><!-- Ethnic --><bounds x="559" y="514" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x20"><!-- Percussive --><bounds x="655" y="514" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x10"><!-- SFX --><bounds x="751" y="514" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x08"><!-- Model excl. --><bounds x="847" y="514" width="84" height="29"/></element>
+		<element ref="rect_yellow_button" inputtag="SWS2" inputmask="0x04"><!-- Drum --><bounds x="942" y="514" width="84" height="29"/></element>
+
+		<element ref="rect_white_button" inputtag="SWS3" inputmask="0x08"><!-- MUTE/SOLO --><bounds x="1337" y="103" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS3" inputmask="0x04"><!-- PART - --><bounds x="1433" y="103" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS3" inputmask="0x02"><!-- PART + --><bounds x="1507" y="103" width="70" height="54"/></element>
+
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x40"><!-- ENTER --><bounds x="1337" y="175" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x20"><!-- SELECT < --><bounds x="1433" y="175" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x10"><!-- SELECT > --><bounds x="1507" y="175" width="70" height="54"/></element>
+
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x08"><!-- EXIT --><bounds x="1337" y="248" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x04"><!-- VALUE - --><bounds x="1433" y="248" width="70" height="54"/></element>
+		<element ref="rect_white_button" inputtag="SWS4" inputmask="0x02"><!-- VALUE + --><bounds x="1507" y="248" width="70" height="54"/></element>
+
+		<element ref="round_white_button" inputtag="SWS5" inputmask="0x40"><!-- SELECT --><bounds x="1106" y="435" width="44" height="44"/></element>
+		<element ref="round_white_button" inputtag="SWS5" inputmask="0x20"><!-- AUDITION --><bounds x="1214" y="435" width="44" height="44"/></element>
+	</view>
+
+</mamelayout>
