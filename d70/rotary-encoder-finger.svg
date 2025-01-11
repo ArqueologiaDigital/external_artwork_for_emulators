@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.000076"
+   height="32.00005"
+   viewBox="0 0 8.4666869 8.4666798"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="rotary-encoder-finger.png"
+   inkscape:export-xdpi="383.99908"
+   inkscape:export-ydpi="383.99908"
+   inkscape:version="1.5-dev (f4c649c00a, 2024-11-30, custom)"
+   sodipodi:docname="rotary-encoder-finger.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="16.630104"
+     inkscape:cx="10.162294"
+     inkscape:cy="16.506211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient850"
+       id="linearGradient853-6"
+       x1="111.24079"
+       y1="113.20629"
+       x2="113.54153"
+       y2="110.07965"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0144466,0,0,1.0144491,-1.6281455,-1.593382)" />
+    <linearGradient
+       id="linearGradient850"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#181714;stop-opacity:1"
+         offset="0"
+         id="stop850" />
+      <stop
+         style="stop-color:#292824;stop-opacity:1"
+         offset="1"
+         id="stop851" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-85.724995,-131.23333)">
+    <g
+       id="g1"
+       transform="matrix(-1.6456398,0.27954375,-0.27984508,-1.6456859,305.65533,287.4101)">
+      <ellipse
+         style="fill:url(#linearGradient853-6);fill-opacity:1;stroke:#000000;stroke-width:0.158503;stroke-linecap:square;stroke-dasharray:none"
+         id="circle277-3"
+         cx="112.13212"
+         cy="111.3756"
+         rx="2.4564624"
+         ry="2.4564686" />
+    </g>
+  </g>
+</svg>

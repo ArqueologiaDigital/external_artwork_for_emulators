@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<mamelayout version="2">
+
+<!-- define elements -->
+
+	<element name="cpanel"><image file="d70.png"/></element>
+
+	<element name="slider-wider-well">
+		<rect><color alpha="0"/></rect>
+	</element>
+
+	<element name="slider-knob"><image file="slider-knob.png"/></element>
+	<element name="rotary-encoder-finger"><image file="rotary-encoder-finger.png"/></element>
+
+	<element name="red_led" defstate="0">
+		<rect state="1">
+			<color red="1" green="0.0" blue="0.0" />
+		</rect>
+		<rect state="0">
+			<color red="0.2" green="0.0" blue="0.0" />
+		</rect>
+	</element>
+
+	<element name="button"><image state="1" file="pressed-button.png"/></element>
+	<element name="button-with-led"><image state="1" file="pressed-button-with-led.png"/></element>
+
+<!-- build screen -->
+
+	<view name="External Layout">
+	<bounds left="0" right="1048" top="0" bottom="524" />
+	<element ref="cpanel"><bounds x="0" y="0"  width="1048" height="524" /></element>
+	<screen index="0"><bounds x="258" y="52"  width="480" height="128" /></screen>
+
+	<!-- PERFORMANCE -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x80"><bounds x="505" y="379" width="37" height="9"/></element>
+	<element name="LP26" ref="red_led"><bounds x="518" y="380"  width="10" height="3" /></element>
+
+	<!-- PATCH -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x40"><bounds x="553" y="379" width="37" height="9"/></element>
+	<element name="LP31" ref="red_led"><bounds x="566" y="380"  width="10" height="3" /></element>
+
+	<!-- TONE -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x20"><bounds x="602" y="379" width="37" height="9"/></element>
+	<element name="LP32" ref="red_led"><bounds x="615" y="380"  width="10" height="3" /></element>
+
+	<!-- A/B -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x10"><bounds x="650" y="379" width="37" height="9"/></element>
+	<element name="LP33" ref="red_led"><bounds x="663" y="380"  width="10" height="3" /></element>
+
+	<!-- INT/CARD -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x08"><bounds x="698" y="379" width="37" height="9"/></element>
+	<element name="LP34" ref="red_led"><bounds x="711" y="380"  width="10" height="3" /></element>
+
+	<!-- COMMAND -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x04"><bounds x="747" y="379" width="37" height="9"/></element>
+	<element name="LP35" ref="red_led"><bounds x="760" y="380"  width="10" height="3" /></element>
+
+	<!-- WRITE -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x02"><bounds x="795" y="379" width="37" height="9"/></element>
+	<element name="LP36" ref="red_led"><bounds x="808" y="380"  width="10" height="3" /></element>
+
+	<!-- ENTER -->
+	<element ref="button-with-led" inputtag="KEY0" inputmask="0x01"><bounds x="843" y="379" width="37" height="9"/></element>
+	<element name="LP37" ref="red_led"><bounds x="856" y="380"  width="10" height="3" /></element>
+
+
+	<!-- Bank 1 --><element ref="button" inputtag="KEY1" inputmask="0x80"><bounds x="505" y="439" width="37" height="9"/></element>
+	<!-- Bank 2 --><element ref="button" inputtag="KEY1" inputmask="0x40"><bounds x="553" y="439" width="37" height="9"/></element>
+	<!-- Bank 3 --><element ref="button" inputtag="KEY1" inputmask="0x20"><bounds x="602" y="439" width="37" height="9"/></element>
+	<!-- Bank 4 --><element ref="button" inputtag="KEY1" inputmask="0x10"><bounds x="650" y="439" width="37" height="9"/></element>
+	<!-- Bank 5 --><element ref="button" inputtag="KEY1" inputmask="0x08"><bounds x="698" y="439" width="37" height="9"/></element>
+	<!-- Bank 6 --><element ref="button" inputtag="KEY1" inputmask="0x04"><bounds x="747" y="439" width="37" height="9"/></element>
+	<!-- Bank 7 --><element ref="button" inputtag="KEY1" inputmask="0x02"><bounds x="795" y="439" width="37" height="9"/></element>
+	<!-- Bank 8 --><element ref="button" inputtag="KEY1" inputmask="0x01"><bounds x="843" y="439" width="37" height="9"/></element>
+
+
+	<!-- Number 1 --><element ref="button" inputtag="KEY2" inputmask="0x80"><bounds x="505" y="469" width="37" height="9"/></element>
+	<!-- Number 2 --><element ref="button" inputtag="KEY2" inputmask="0x40"><bounds x="553" y="469" width="37" height="9"/></element>
+	<!-- Number 3 --><element ref="button" inputtag="KEY2" inputmask="0x20"><bounds x="602" y="469" width="37" height="9"/></element>
+	<!-- Number 4 --><element ref="button" inputtag="KEY2" inputmask="0x10"><bounds x="650" y="469" width="37" height="9"/></element>
+	<!-- Number 5 --><element ref="button" inputtag="KEY2" inputmask="0x08"><bounds x="698" y="469" width="37" height="9"/></element>
+	<!-- Number 6 --><element ref="button" inputtag="KEY2" inputmask="0x04"><bounds x="747" y="469" width="37" height="9"/></element>
+	<!-- Number 7 --><element ref="button" inputtag="KEY2" inputmask="0x02"><bounds x="795" y="469" width="37" height="9"/></element>
+	<!-- Number 8 --><element ref="button" inputtag="KEY2" inputmask="0x01"><bounds x="843" y="469" width="37" height="9"/></element>
+
+
+	<!-- DEC/DEL --><element ref="button" inputtag="KEY3" inputmask="0x80"><bounds x="871" y="252" width="59" height="13"/></element>
+	<!-- INC/INS --><element ref="button" inputtag="KEY3" inputmask="0x40"><bounds x="947" y="252" width="59" height="13"/></element>
+	<!-- Down --><element ref="button" inputtag="KEY3" inputmask="0x20"><bounds x="909" y="204" width="59" height="13"/></element>
+	<!-- Left --><element ref="button" inputtag="KEY3" inputmask="0x10"><bounds x="871" y="157" width="59" height="13"/></element>
+	<!-- Right --><element ref="button" inputtag="KEY3" inputmask="0x08"><bounds x="947" y="157" width="59" height="13"/></element>
+	<!-- Up --><element ref="button" inputtag="KEY3" inputmask="0x04"><bounds x="909" y="108" width="59" height="13"/></element>
+
+	<!-- MIDI OUT -->
+	<element ref="button-with-led" inputtag="KEY3" inputmask="0x02"><bounds x="53" y="157" width="59" height="13"/></element>
+	<element name="LP03" ref="red_led"><bounds x="75" y="158"  width="15" height="5" /></element>
+
+	<!-- TONE DISPLAY -->
+	<element ref="button-with-led" inputtag="KEY3" inputmask="0x01"><bounds x="53" y="108" width="59" height="13"/></element>
+	<element name="LP02" ref="red_led"><bounds x="75" y="109"  width="15" height="5" /></element>
+
+
+	<!-- EXIT --><element ref="button" inputtag="KEY4" inputmask="0x80"><bounds x="751" y="252" width="59" height="13"/></element>
+	<!-- F5 --><element ref="button" inputtag="KEY4" inputmask="0x40"><bounds x="645" y="252" width="59" height="13"/></element>
+	<!-- F4 --><element ref="button" inputtag="KEY4" inputmask="0x20"><bounds x="555" y="252" width="59" height="13"/></element>
+	<!-- F3 --><element ref="button" inputtag="KEY4" inputmask="0x10"><bounds x="465" y="252" width="59" height="13"/></element>
+	<!-- F2 --><element ref="button" inputtag="KEY4" inputmask="0x08"><bounds x="375" y="252" width="59" height="13"/></element>
+	<!-- F1 --><element ref="button" inputtag="KEY4" inputmask="0x04"><bounds x="285" y="252" width="59" height="13"/></element>
+
+	<!-- USER -->
+	<element ref="button-with-led" inputtag="KEY4" inputmask="0x02"><bounds x="177" y="252" width="59" height="13"/></element>
+	<element name="LP00" ref="red_led"><bounds x="199" y="253"  width="15" height="5" /></element>
+
+	<!-- PART -->
+	<element ref="button-with-led" inputtag="KEY4" inputmask="0x01"><bounds x="53" y="252" width="59" height="13"/></element>
+	<element name="LP01" ref="red_led"><bounds x="75" y="253"  width="15" height="5" /></element>
+
+
+	<!-- EDIT -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x80"><bounds x="79" y="467" width="37" height="9"/></element>
+	<element name="LP04" ref="red_led"><bounds x="92" y="468"  width="10" height="3" /></element>
+
+	<!-- PORTAMENTO -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x40"><bounds x="79" y="438" width="37" height="9"/></element>
+	<element name="LP05" ref="red_led"><bounds x="92" y="439"  width="10" height="3" /></element>
+
+	<!-- RESONANCE -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x20"><bounds x="79" y="408" width="37" height="9"/></element>
+	<element name="LP06" ref="red_led"><bounds x="92" y="409"  width="10" height="3" /></element>
+
+	<!-- PAN -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x10"><bounds x="79" y="378" width="37" height="9"/></element>
+	<element name="LP07" ref="red_led"><bounds x="92" y="379"  width="10" height="3" /></element>
+
+	<!-- TUNING -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x08"><bounds x="127" y="378" width="37" height="9"/></element>
+	<element name="LP13" ref="red_led"><bounds x="140" y="379"  width="10" height="3" /></element>
+
+	<!-- ATTACK -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x04"><bounds x="127" y="408" width="37" height="9"/></element>
+	<element name="LP12" ref="red_led"><bounds x="140" y="409"  width="10" height="3" /></element>
+
+	<!-- RELEASE -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x02"><bounds x="127" y="438" width="37" height="9"/></element>
+	<element name="LP11" ref="red_led"><bounds x="140" y="439"  width="10" height="3" /></element>
+
+	<!-- PCM CARD -->
+	<element ref="button-with-led" inputtag="KEY5" inputmask="0x01"><bounds x="127" y="467" width="37" height="9"/></element>
+	<element name="LP10" ref="red_led"><bounds x="140" y="468"  width="10" height="3" /></element>
+
+
+	<!-- PLAY -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x80"><bounds x="30" y="467" width="37" height="9"/></element>
+	<element name="LP20" ref="red_led"><bounds x="43" y="468"  width="10" height="3" /></element>
+
+	<!-- SOLO -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x40"><bounds x="30" y="438" width="37" height="9"/></element>
+	<element name="LP21" ref="red_led"><bounds x="43" y="439"  width="10" height="3" /></element>
+
+	<!-- CUTOFF -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x20"><bounds x="30" y="408" width="37" height="9"/></element>
+	<element name="LP22" ref="red_led"><bounds x="43" y="409"  width="10" height="3" /></element>
+
+	<!-- LEVEL -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x10"><bounds x="30" y="378" width="37" height="9"/></element>
+	<element name="LP23" ref="red_led"><bounds x="43" y="379"  width="10" height="3" /></element>
+
+	<!-- UPPER (4) -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x08"><bounds x="407" y="467" width="37" height="9"/></element>
+	<element name="LP16" ref="red_led"><bounds x="420" y="468"  width="10" height="3" /></element>
+
+	<!-- UPPER (3) -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x04"><bounds x="339" y="467" width="37" height="9"/></element>
+	<element name="LP17" ref="red_led"><bounds x="352" y="468"  width="10" height="3" /></element>
+
+	<!-- LOWER (2) -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x02"><bounds x="271" y="467" width="37" height="9"/></element>
+	<element name="LP15" ref="red_led"><bounds x="284" y="468"  width="10" height="3" /></element>
+
+	<!-- LOWER (1) -->
+	<element ref="button-with-led" inputtag="KEY6" inputmask="0x01"><bounds x="203" y="467" width="37" height="9"/></element>
+	<element name="LP14" ref="red_led"><bounds x="216" y="468"  width="10" height="3" /></element>
+
+
+	<!-- EFFECT/CTRL -->
+	<element ref="button-with-led" inputtag="KEY7" inputmask="0x01"><bounds x="53" y="204" width="59" height="13"/></element>
+	<element name="LP24" ref="red_led"><bounds x="75" y="205"  width="15" height="5" /></element>
+
+
+	<element ref="slider-wider-well" id="SLIDER4"><bounds x="200" y="349" width="43" height="97"/></element>
+	<element ref="slider-knob">
+		<animate inputtag="SLIDER4" inputmask="0x7f"/>
+		<bounds state="100" x="203" y="352" width="37" height="24"/>
+		<bounds state="0"  x="203" y="417" width="37" height="24"/>
+	</element>
+
+	<element ref="slider-wider-well" id="SLIDER5"><bounds x="269" y="349" width="43" height="97"/></element>
+	<element ref="slider-knob">
+		<animate inputtag="SLIDER5" inputmask="0x7f"/>
+		<bounds state="100" x="272" y="352" width="37" height="24"/>
+		<bounds state="0" x="272" y="417" width="37" height="24"/>
+	</element>
+
+	<element ref="slider-wider-well" id="SLIDER6"><bounds x="337" y="349" width="43" height="97"/></element>
+	<element ref="slider-knob">
+		<animate inputtag="SLIDER6" inputmask="0x7f"/>
+		<bounds state="100" x="340" y="352" width="37" height="24"/>
+		<bounds state="0"  x="340" y="417" width="37" height="24"/>
+	</element>
+
+	<element ref="slider-wider-well" id="SLIDER7"><bounds x="405" y="349" width="43" height="97"/></element>
+	<element ref="slider-knob">
+		<animate inputtag="SLIDER7" inputmask="0x7f"/>
+		<bounds state="100" x="408" y="352" width="37" height="24"/>
+		<bounds state="0"  x="408" y="417" width="37" height="24"/>
+	</element>
+
+	<element ref="rotary-encoder-finger" id="finger"><bounds x="931" y="381" width="32" height="32"/></element>
+	
+	</view>
+
+
+	<script><![CDATA[
+		file:set_resolve_tags_callback(
+			function()
+				-- These constants need to match the "slider" and "slider-knob"
+				-- element attributes in the "Mixer" section.
+				local slider_height <const> = 82
+				local knob_height <const> = 24
+				local knob_slider_delta_y <const> = 9  -- slider y - knob y
+
+				local slider_deadzone <const> = math.floor(knob_height / 2) - knob_slider_delta_y
+
+				-- Local state used by the pointer update handler.
+				local sliders = {}
+				local slider_fields = {}
+				local selected = 0
+
+				-- Gather relevant elements and inputs into local state.
+				local view = file.views["External Layout"]
+				for i = 1, #view.items do
+					local item = view.items:at(i)
+					if item.id ~= nil and string.find(item.id, "SLIDER") == 1 then
+						local port_tag = item.id
+						local port = file.device:ioport(port_tag)
+						local field = nil
+						if port ~= nil then
+							for k, val in pairs(port.fields) do
+								field = val
+								break
+							end
+							if field == nil then
+								print("LAYOUT ERROR - Port does not have a field: " .. port_tag)
+							end
+						else
+							print("LAYOUT ERROR - Port not found: " .. port_tag)
+						end
+						table.insert(sliders, item)
+						table.insert(slider_fields, field)
+					end
+				end
+
+				view:set_pointer_updated_callback(
+					function(type, id, dev, x, y, btn, dn, up, cnt)
+						-- No button pressed. Reset state.
+						if btn & 1 == 0 then
+							selected = 0
+							return
+						end
+
+						-- Button just pressed. Find affected slider.
+						if dn & 1 ~= 0 then
+							for i = 1, #sliders do
+								if sliders[i].bounds:includes(x, y) then
+									selected = i
+									break
+								end
+							end
+						end
+
+						-- No slider selected. Nothing to do.
+						if selected <= 0 then
+							return
+						end
+
+						-- A slider is selected. Update state and, indirectly,
+						-- slider knob position, based on the pointer's Y position.
+
+						-- It is assumed the attached IO field is an IPT_ADJUSTER
+						-- with a range of 0-100 (the default).
+
+						local bbox = sliders[selected].bounds
+						local scale_factor = bbox.height / slider_height
+						local min_y = bbox.y0 + slider_deadzone * scale_factor
+						local max_y = bbox.y1 - slider_deadzone * scale_factor
+
+						local new_value = 100 - 100 * (y - min_y) / (max_y - min_y)
+						new_value = math.floor(new_value + 0.5)
+						if new_value < 0 then new_value = 0 end
+						if new_value > 100 then new_value = 100 end
+						slider_fields[selected].user_value = new_value
+					end)
+			end)
+	]]></script>
+
+</mamelayout>
