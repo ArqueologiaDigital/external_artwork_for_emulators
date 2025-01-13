@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="61.000263"
+   height="39.999729"
+   viewBox="0 0 16.139652 10.583262"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.5-dev (f4c649c00a, 2024-11-30, custom)"
+   sodipodi:docname="msp_5_button_pressed.svg"
+   inkscape:export-filename="msp_5_button_pressed.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="5.8796295"
+     inkscape:cx="25.171654"
+     inkscape:cy="23.215749"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-178.32904,-96.573051)">
+    <path
+       id="path45"
+       style="fill:#4c5156;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       d="m 194.3364,96.705342 h -15.87507 v 10.051998 a 40.575132,13.480224 0 0 0 7.82586,0.26668 40.575132,13.480224 0 0 0 8.04921,-0.28436 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.44769px;line-height:1.25;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';text-align:center;text-anchor:middle;fill:#956b43;fill-opacity:1;stroke-width:0.264584"
+       x="162.45456"
+       y="116.99023"
+       id="text496"
+       transform="scale(1.1458506,0.8727141)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';fill:#956b43;fill-opacity:1;stroke-width:0.264584"
+         x="162.45456"
+         y="116.99023"
+         id="tspan496">5</tspan></text>
+  </g>
+</svg>

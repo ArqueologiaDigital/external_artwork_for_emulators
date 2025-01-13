@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.00028"
+   height="24.999701"
+   viewBox="0 0 7.9375739 6.6145045"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.5-dev (f4c649c00a, 2024-11-30, custom)"
+   sodipodi:docname="screen_page_up_button_pressed.svg"
+   inkscape:export-filename="screen_page_up_button_pressed.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="23.518518"
+     inkscape:cx="17.092914"
+     inkscape:cy="6.909449"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient800"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#282829;stop-opacity:1"
+         offset="0"
+         id="stop800" />
+      <stop
+         style="stop-color:#454547;stop-opacity:1"
+         offset="1"
+         id="stop801" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient800"
+       id="linearGradient809"
+       x1="169.17776"
+       y1="112.94572"
+       x2="169.17776"
+       y2="109.35857"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0184944,0,0,1.0446244,34.916747,-7.8634286)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-202.93518,-105.03982)">
+    <path
+       style="fill:url(#linearGradient809);fill-opacity:1;stroke:#000000;stroke-width:0.264584;stroke-linecap:square;stroke-dasharray:none"
+       d="m 206.9036,105.17211 c -1.37018,0.004 -2.70724,0.43239 -3.83613,1.22886 v 5.12106 h 7.67299 v -5.13261 c -1.13038,-0.79253 -2.46761,-1.21679 -3.83686,-1.21731 z"
+       id="path270"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+</svg>

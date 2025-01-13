@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29.000277"
+   height="28.999725"
+   viewBox="0 0 7.6729898 7.672844"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.5-dev (f4c649c00a, 2024-11-30, custom)"
+   sodipodi:docname="dark_grey_round_button_pressed.svg"
+   inkscape:export-filename="dark_grey_round_button_pressed.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="16.630104"
+     inkscape:cx="23.631843"
+     inkscape:cy="17.287926"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient781"
+       id="linearGradient782"
+       x1="57.246128"
+       y1="118.06254"
+       x2="57.246128"
+       y2="111.94003"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.97897113,0,0,0.97895182,36.103973,6.9720958)" />
+    <linearGradient
+       id="linearGradient781"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#282829;stop-opacity:1"
+         offset="0"
+         id="stop781" />
+      <stop
+         style="stop-color:#454547;stop-opacity:1"
+         offset="1"
+         id="stop782" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-87.577049,-115.88754)">
+    <ellipse
+       style="fill:url(#linearGradient782);fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none"
+       id="circle195"
+       cx="91.413544"
+       cy="119.72396"
+       rx="3.7042034"
+       ry="3.7041304" />
+  </g>
+</svg>
